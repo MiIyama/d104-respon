@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    background-color:rgba(128, 128, 128, 0.315);
+}
+
+img{
+    width: 50px;
+}
+
+header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: green;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    padding: 0 5px;
+}
+
+.menu-hamburguer{
+    display: none;
+}
+
+@media(max-width:700px){ /* para mudar a barra qd eu diminuir a tela para esse tamanho */
+    nav{
+        position: absolute; /* */
+        right: 0;
+        top: 70px;
+        width: 100%;
+        background-color: white;
+        text-align: right;        
+    }
+
+    nav a{
+        display: block;
+        padding: 5px 20px;
+    }
+
+    .menu-hamburguer{
+        display: block;
+    }
+}
+

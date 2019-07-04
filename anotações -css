@@ -1,0 +1,46 @@
+
+.menu-hamburguer{ /*para o menu-hamburguer sumir qd nao for menor que 700 */
+    display: none;
+}
+
+@media(max-width:700px){ /* para mudar a barra qd eu diminuir a tela para esse tamanho */
+    nav{
+        display: none;
+    }
+
+    .menu-hamburguer{
+        display: block;
+    }
+}
+
+******************************************************************************************************************************
+@media(max-width:700px){ /* para mudar a barra qd eu diminuir a tela para esse tamanho */
+    nav{
+        position: absolute; /* */
+        right: 0;
+        top: 70px;
+        width: 100%;
+        background-color: white;
+        text-align: right;        
+    }
+
+    nav a{
+        display: block;
+        padding: 5px 20px;
+    }
+
+    .menu-hamburguer{
+        display: block;
+    }
+}
+
+****************************************************************************************************************************************
+position: absolute no navbar
+          fixed-a barra fica fixa
+
+
+opacity: 1=solido 
+        0.5=transparente
+
+
+media query aplicar o css de acordo com uma condiçao
